@@ -48,6 +48,57 @@ a:hover {   /* Mouse passando em cima do link */
 header {
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+
+#social img {
+    width: 32px;
+}
+
+#social a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#social a span{
+    margin-left: 6px;
+    display: none;
+}
+
+#social a:hover span {
+    display: inline-block;
+}
+
+#menu {
+    padding: 0 20px;
+}
+
+#menu li{
+    margin: 10px 0;
+}
+
+#menu a{
+    height:100%;
+    padding: 10px;
+    color: #FFFFFF;
+    transition: 300ms;
+    background-color: var(--cor-secundaria);
+}
+
+#menu a:hover {
+    filter: brightness(0.8);
+    text-decoration: none;
+
 }
 
 nav ul li {
@@ -168,7 +219,7 @@ footer{
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    align-content: space-around;
+    justify-content: space-around;
 
 }
 
@@ -178,6 +229,15 @@ footer a {
 
 footer ul li {
     display: inline-block;
-    padding: 0 6px;
-    border-right: 1px solid #ffffff;
+    padding: 0 12px;
+    border-right: 2px solid #ffffff;
+}
+
+footer ul li:last-child{
+    border-right: none;
+}
+
+footer img {
+    width: 200px;
+    height: 100%;
 }
